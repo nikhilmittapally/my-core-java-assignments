@@ -1,0 +1,18 @@
+The code begins by importing the necessary classes: Scanner for input handling and TreeMap for storing contacts.
+The class PhoneBook is declared, which contains the main method as the entry point of the program.
+Inside the main method, a TreeMap called phoneBook is created to store the contacts. The key of the map is of type String (contact name), and the value is also of type String (phone number).
+
+A Scanner object, scanner, is created to read input from the user.
+The program prompts the user to enter contact details and adds them to the phone book using a do-while loop.
+Inside the loop, the user is prompted to enter the name and phone number of the contact.
+The put method is used to add the contact to the phoneBook TreeMap, with the name as the key and the phone number as the value.
+The user is asked if they want to add another contact. If the input is "yes" (ignoring the case), the loop continues; otherwise, it exits.
+
+After all the contacts are added, the program displays the contacts in the phone book by iterating over the phoneBook TreeMap using a for-each loop.
+The keySet method is used to retrieve a set of all the keys (contact names) in the TreeMap.
+For each key (contact name), the corresponding value (phone number) is retrieved using the get method and printed to the console.
+
+The program allows the user to search for a contact by name. It prompts the user to enter the name to search.
+The user's input is stored in the searchName variable.
+The get method is used to retrieve the phone number associated with the entered name from the phoneBook TreeMap. The result is stored in the searchResult variable.
+If the searchResult is not null (i.e., if the contact is found in the phone book), the phone number is printed to the console. Otherwise, it indicates that the contact was
